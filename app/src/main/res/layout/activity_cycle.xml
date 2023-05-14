@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#37ccca"
+    tools:context=".Cycle">
+
+    <EditText
+        android:id="@+id/Number_aaa"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_cycle"
+        android:layout_marginHorizontal="80sp"
+        android:layout_marginTop="15sp"
+        android:ems="10"
+        android:hint="Введіть значення а:"
+        />
+
+    <EditText
+        android:id="@+id/Number_bb"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Number_aaa"
+        android:layout_marginHorizontal="80sp"
+        android:layout_marginTop="15sp"
+        android:ems="10"
+        android:hint="Введіть значення b"
+        />
+
+    <TextView
+        android:id="@+id/info3_text"
+        android:layout_width="match_parent"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:layout_height="wrap_content"
+        android:text="Циклічний алгоритм"
+        android:layout_marginTop="50sp"
+        />
+
+    <TextView
+        android:id="@+id/res_text3"
+        android:layout_width="match_parent"
+        android:textColor="#fff"
+        android:textSize="25sp"
+        android:layout_height="wrap_content"
+        android:text="Результат: "
+        android:layout_marginTop="10sp"
+        android:layout_marginHorizontal="50sp"
+        android:layout_below="@+id/Number_bb"
+        />
+
+    <Button
+        android:id="@+id/btn_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Обчислити"
+        android:layout_below="@+id/res_text3"
+        android:layout_marginTop="15sp"
+        android:textSize="14sp"
+        android:layout_marginHorizontal="45sp"
+        android:backgroundTint="#bb35c4"
+        />
+
+    <ImageView
+        android:id="@+id/image_cycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:srcCompat="@drawable/cycle"
+        android:layout_below="@+id/info3_text"
+        android:layout_marginTop="15sp"
+        />
+
+    <Button
+        android:id="@+id/btn_save1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_result"
+        android:layout_marginHorizontal="45sp"
+        android:layout_marginTop="15sp"
+        android:text="Зберегти"
+        android:textSize="14sp"
+        android:backgroundTint="#bb35c4"/>
+
+    <Button
+        android:id="@+id/btn_download1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btn_save1"
+        android:layout_marginHorizontal="45sp"
+        android:layout_marginTop="15sp"
+        android:text="Завантажити"
+        android:textSize="14sp"
+        android:backgroundTint="#bb35c4"/>
+
+</RelativeLayout>

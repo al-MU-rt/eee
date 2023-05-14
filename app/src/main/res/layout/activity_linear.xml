@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#37ccca"
+    tools:context=".Linear">
+
+    <TextView
+        android:id="@+id/info_text"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="120sp"
+        android:text="Лінійний алгоритм"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="30sp" />
+
+    <EditText
+        android:id="@+id/Number_a"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/image_lin"
+        android:layout_marginHorizontal="80sp"
+        android:layout_marginTop="15sp"
+        android:ems="10"
+        android:hint="Введіть значення а:"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/Number_x"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Number_a"
+        android:layout_marginHorizontal="80sp"
+        android:layout_marginTop="15sp"
+        android:ems="10"
+        android:hint="Введіть значення b"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/Number_c"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Number_x"
+        android:layout_marginHorizontal="80sp"
+        android:layout_marginTop="15sp"
+        android:ems="10"
+        android:hint="Введіть значення x:"
+        android:inputType="number" />
+
+    <TextView
+        android:id="@+id/res_text1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Number_c"
+        android:layout_marginHorizontal="50sp"
+        android:layout_marginTop="15sp"
+        android:text="Результат: "
+        android:textColor="#fff"
+        android:textSize="25sp" />
+
+    <Button
+        android:id="@+id/btn_result"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/res_text1"
+        android:layout_marginHorizontal="45sp"
+        android:layout_marginTop="15sp"
+        android:text="Обчислити"
+        android:textSize="15sp"
+        android:backgroundTint="#bb35c4"/>
+
+    <ImageView
+        android:id="@+id/image_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/info_text"
+        android:layout_marginTop="15sp"
+        app:srcCompat="@drawable/linear"/>
+
+</RelativeLayout>

@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#37ccca"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Лабораторна робота №1"
+        android:textAlignment="center"
+        android:textColor="#fff"
+        android:textSize="30sp"
+        android:id="@+id/laba_text"
+        android:layout_marginTop="150sp"
+        />
+
+    <Button
+        android:id="@+id/btn_to_lin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Лінійний алгоритм"
+        android:layout_below="@id/laba_text"
+        android:layout_marginTop="100sp"
+        android:layout_marginHorizontal="15sp"
+        android:textSize="17sp"
+        android:backgroundTint="#bb35c4"
+        />
+
+
+    <Button
+        android:id="@+id/btn_to_branch"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Алгоритм, що розгалуджується"
+        android:layout_below="@+id/btn_to_lin"
+        android:layout_marginTop="20sp"
+        android:layout_marginHorizontal="15sp"
+        android:textSize="17sp"
+        android:backgroundTint="#bb35c4"
+        />
+
+    <Button
+        android:id="@+id/btn_to_cycle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Циклічний алгоритм"
+        android:layout_below="@+id/btn_to_branch"
+        android:layout_marginTop="20sp"
+        android:layout_marginHorizontal="15sp"
+        android:textSize="17sp"
+        android:backgroundTint="#bb35c4"
+        />
+
+</RelativeLayout>
